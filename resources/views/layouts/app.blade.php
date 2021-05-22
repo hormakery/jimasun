@@ -30,12 +30,13 @@
 <body>
     <div></div>
     <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
-        <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" href="#"><strong>Jimasun &nbsp;</strong><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
             @if (Route::has('login'))
                 @auth
                     <li class="nav-item"><a class="nav-link active" href="{{ url('/home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url('/logout') }}">Logout</a></li>
                     @else
                    
                     <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
@@ -55,8 +56,8 @@
     </div>
     <footer class="footer-basic"></footer><footer id="footer">
     
-    <div style= "background: black; text-align: center; margin: 0px; padding:10px">
-        <p style= "color:grey; font-family: raleway">Copyright (c) 2021 Hormakery</p>
+    <div style= "background: linear-gradient(120deg, #040406, #5983e8); text-align: center; margin: 0px; padding:10px">
+        <p style= "color:white; font-family: raleway">Copyright (c) 2021 Hormakery</p>
     </div>
 </footer>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
